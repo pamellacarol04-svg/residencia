@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&display=swap" rel="stylesheet">
+	<!-------->
+
+	<style>
+		* {
+			margin: 20;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Bodoni Moda", serif;
+			padding: 3px;
+			text-align: center;
+			margin: 3px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #a16b55;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 5px;
+		}
+
+		.background {
+			background-color: #ffffff;
+		}
+
+		.border {
+			border: 1.5px solid #a16b55;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #a16b55;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu border">
+		<a id="primeiro" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Página Inicial</a>
+		<a id="segundo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Clínica Médica</a>
+		<a id="terceiro" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Ginecologia e Obstetrícia</a>
+		<a id="quarto" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Cirurgia</a>
+		<a id="quinto" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Pediatria</a>
+		<a id="sexto" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stethoscope"></i> Preventiva</a>
+		<a id="sétimo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Materiais</a>
+		<a id="oitavo" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-file-lines"></i> Simulados</a>
+		<a id="nono" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-exclamation"></i> Caderno de Erros</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:1px} i{width:2px; margin-right:1px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'primeiro')
+				window.open("https://www.notion.so/med26/r-e-s-i-d-n-c-i-a-2c66f65f7fbd8177bfa4df394bf05b2d?source=copy_link", '_blank').focus();
+		
+			else if (id == "segundo")
+				window.open("https://www.notion.so/med26/Cl-nica-M-dica-2c86f65f7fbd8003b37fdbba42232f3d?source=copy_link", '_blank').focus();
+
+			else if (id == "terceiro")
+				window.open("https://www.notion.so/med26/Ginecologia-e-Obstetr-cia-2c86f65f7fbd80c0936bc2e432bb8ff5?source=copy_link').focus();
+
+			else if (id == "quarto")
+				window.open("https://www.notion.so/med26/Cirurgia-Geral-2c86f65f7fbd806a92b1fc78b0145efc?source=copy_link", '_blank').focus();
+
+			else if (id == "quinto")
+				window.open("https://www.notion.so/med26/Pediatria-2c86f65f7fbd80c6b657c6cdcd2f006d?source=copy_link", '_blank').focus();
+
+			else if (id == "sexto")
+				window.open("https://www.notion.so/med26/Preventiva-2c86f65f7fbd809889afc7255ff09d81?source=copy_link", '_blank').focus();
+
+			else if (id == "sétimo")
+				window.open("https://www.notion.so/med26/Materiais-2ed6f65f7fbd80df8f5ceefaa37623fe?source=copy_link", '_blank').focus();
+
+			else if (id == "oitavo")
+				window.open("https://www.notion.so/med26/Simulados-2ed6f65f7fbd80548c1dc71d0bfbb489?source=copy_link", '_blank').focus();
+
+			else if (id == "nono")
+				window.open("https://www.notion.so/med26/Caderno-de-Erros-2ed6f65f7fbd8097bf18c8b03612c693?source=copy_link", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
